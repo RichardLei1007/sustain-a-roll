@@ -9,9 +9,17 @@ function App() {
           <span className = "titleText">Information</span>
         </div>
       </header>
+
       <div className =  "centerSection">
         <div className = "progressBar" />
       </div>
+
+      <div className = "selectionMenu">
+        <div className = "leftArrow" />
+        <span className = "menuText"> Status </span>
+        <div className = "rightArrow" />
+      </div>
+
       <Footer></Footer>
     </div>
   );

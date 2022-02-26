@@ -27,18 +27,12 @@
   font-weight: bolder;
 }
 
-.centerSection {
+.progressBar {
   display: flex;
   justify-content: center;
-
-}
-
-.progressBar {
-  margin-bottom: 2rem;
-  height: 15rem;
-  width: 15rem;
-  border-radius: 50%;
-  background-color: white;
+  margin-top: 2rem;
+  height: 20rem;
+  width: 20rem;
 }
 
 .selectionMenu {

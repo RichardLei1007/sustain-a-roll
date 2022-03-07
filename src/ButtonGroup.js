@@ -22,28 +22,33 @@ export default function BasicButtonGroup(props) {
     const [flag2, setFlag2] = React.useState(true);
     const [flag3, setFlag3] = React.useState(true);
     const [percent, setPercent] = useState(0);
+    const [status, setStatus] = useState(1);
 
     props.savePercentage(percent);
+    props.saveStatus(status);
 
     function handleClick1() {
         setFlag1(false);
         setFlag2(true);
         setFlag3(true);
         setPercent(65);
+        setStatus(1);
     };
 
     function handleClick2() {
         setFlag2(false);
         setFlag1(true);
         setFlag3(true);
-        setPercent(45);
+        setPercent(20);
+        setStatus(2);
     };
 
     function handleClick3() {
         setFlag3(false);
         setFlag1(true);
         setFlag2(true);
-        setPercent(5);
+        setPercent(2);
+        setStatus(3);
     };
     
   return (

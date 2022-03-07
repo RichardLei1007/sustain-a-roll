@@ -11,7 +11,9 @@ const Input = styled(MuiInput)`
 `;
 
 export default function ThresholdSlider(props) {
-  const [value, setValue] = React.useState(30);
+  const [value, setValue] = React.useState(65);
+
+  props.saveThreshold(value);
 
   const handleSliderChange = (event, newValue) => {
     setValue(newValue);
@@ -31,10 +33,13 @@ export default function ThresholdSlider(props) {
 
   return (
     <Box sx={{ 
+        bgcolor: '#232526',
+        padding: '20px',
+        borderRadius: 10,
         width: 350, 
         display: 'flex',
         flexDirection: 'column',
-        marginLeft: '75px' }}
+        marginLeft: '55px' }}
     >
       <Typography style={{color: "white", fontWeight: 'bold', fontSize: '20px'}} id="input-slider" gutterBottom>
         Threshold
@@ -55,7 +60,7 @@ export default function ThresholdSlider(props) {
             onChange={handleInputChange}
             onBlur={handleBlur}
             inputProps={{
-              step: 10,
+              step: 1,
               min: 0,
               max: 100,
               type: 'number',

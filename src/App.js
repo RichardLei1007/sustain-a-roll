@@ -5,7 +5,6 @@ import ProgressBar from './ProgressBar';
 import BotNavWeekly from './BotNavWeekly';
 import BotNavSetting from './BotNavSetting';
 import WeeklyReport from './WeeklyReport';
-import AssessmentIcon from '@mui/icons-material/Assessment';
 import WeeklyInfo from './WeeklyInfo';
 import ThresholdSlider from './ThresholdSlider';
 import UsageSlider from './UsageSlider';
@@ -15,6 +14,9 @@ function App() {
 
   const [percentage, savePercentage] = useState(0);
   const [botNav, saveBotNav] = useState(1);
+  const [threshold, saveThreshold] = useState(100);
+  const [usage, saveUsage] = useState(3);
+  const [status, saveStatus] = useState(1);
 
   if (botNav === 1) {
     return (
@@ -25,9 +27,9 @@ function App() {
         </div>
       </header>
 
-      <ProgressBar title = {percentage} />
+      <ProgressBar percent = {percentage} threshold = {threshold} status = {status} usage = {usage} />
 
-      <BasicButtonGroup savePercentage = {savePercentage} />
+      <BasicButtonGroup savePercentage = {savePercentage} saveStatus = {saveStatus} />
 
       <SimpleBottomNavigation saveBotNav = {saveBotNav} />
 
@@ -63,9 +65,9 @@ function App() {
         </div>
       </header>
 
-      <ThresholdSlider />
+      <ThresholdSlider saveThreshold = {saveThreshold} />
 
-      <UsageSlider />
+      <UsageSlider saveUsage = {saveUsage} />
 
       <BotNavSetting saveBotNav = {saveBotNav} />
 

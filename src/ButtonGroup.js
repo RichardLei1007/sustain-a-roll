@@ -18,10 +18,10 @@ const theme = createTheme({
   });
 
 export default function BasicButtonGroup(props) {
-    const [flag1, setFlag1] = React.useState(true);
+    const [flag1, setFlag1] = React.useState(false);
     const [flag2, setFlag2] = React.useState(true);
     const [flag3, setFlag3] = React.useState(true);
-    const [percent, setPercent] = useState(0);
+    const [percent, setPercent] = useState(65);
     const [status, setStatus] = useState(1);
 
     props.savePercentage(percent);

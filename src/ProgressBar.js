@@ -2,12 +2,11 @@ import 'react-circular-progressbar/dist/styles.css';
 import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
 import './App.css';
 
-export default function ProgressBar() {
-    const percentage = 15;
+export default function ProgressBar(props) {
     return (
         <CircularProgressbar className = "progressBar"
-            value={percentage}
-            text={`${percentage}/100`}
+            value={props.title}
+            text={`${props.title}/100`}
             background={true}
             backgroundPadding={6}
             styles={buildStyles({

@@ -3,6 +3,7 @@ import Button from '@mui/material/Button';
 import ButtonGroup from '@mui/material/ButtonGroup';
 import Box from '@mui/material/Box';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
+import { useState } from "react";
 
 const theme = createTheme({
     palette: {
@@ -16,29 +17,35 @@ const theme = createTheme({
     },
   });
 
-export default function BasicButtonGroup() {
+export default function BasicButtonGroup(props) {
     const [flag1, setFlag1] = React.useState(true);
     const [flag2, setFlag2] = React.useState(true);
     const [flag3, setFlag3] = React.useState(true);
+    const [percent, setPercent] = useState(0);
 
-    const handleClick1 = () => {
+    props.savePercentage(percent);
+
+    function handleClick1() {
         setFlag1(false);
         setFlag2(true);
         setFlag3(true);
+        setPercent(65);
     };
 
-    const handleClick2 = () => {
+    function handleClick2() {
         setFlag2(false);
         setFlag1(true);
         setFlag3(true);
+        setPercent(45);
     };
 
-    const handleClick3 = () => {
+    function handleClick3() {
         setFlag3(false);
         setFlag1(true);
         setFlag2(true);
+        setPercent(5);
     };
-
+    
   return (
     <Box
       sx={{
@@ -52,6 +59,7 @@ export default function BasicButtonGroup() {
     >
       <ButtonGroup size = 'large' disableElevation color="primary" variant="outlined">
         <ThemeProvider theme={theme}>
+        
         <Button
             onClick={handleClick1}
             variant={flag1 ? "outlined" : "contained"}

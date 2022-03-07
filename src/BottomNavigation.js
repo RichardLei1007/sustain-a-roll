@@ -5,13 +5,14 @@ import BottomNavigationAction from '@mui/material/BottomNavigationAction';
 import SettingsIcon from '@mui/icons-material/Settings';
 import HomeIcon from '@mui/icons-material/Home';
 import DateRangeIcon from '@mui/icons-material/DateRange';
+import { useState } from "react";
 
-export default function SimpleBottomNavigation() {
-  const [value, setValue] = React.useState(0);
-
+export default function SimpleBottomNavigation(props) {
+  const [value, setValue] = useState(1);
+  props.saveBotNav(value);
+  
   return (
     <Box sx={{ width: 500 }}>
-      
       <BottomNavigation
         sx={{
           bgcolor: '#232526',
@@ -31,11 +32,12 @@ export default function SimpleBottomNavigation() {
         value={value}
         onChange={(event, newValue) => {
           setValue(newValue);
+          // console.log(newValue);
         }}
       >
-        <BottomNavigationAction style={{ color: 'white' }} label="Weekly" icon={<DateRangeIcon />} />
-        <BottomNavigationAction style={{ color: 'white' }} label="Home" icon={<HomeIcon />} />
-        <BottomNavigationAction style={{ color: 'white' }} label="Settings" icon={<SettingsIcon />} />
+        <BottomNavigationAction value={1} style={{ color: 'white' }} label="Home" icon={<HomeIcon />} />
+        <BottomNavigationAction value={2} style={{ color: 'white' }} label="Weekly" icon={<DateRangeIcon />} />
+        <BottomNavigationAction value={3} style={{ color: 'white' }} label="Settings" icon={<SettingsIcon />} />
       </BottomNavigation>
     </Box>
   );

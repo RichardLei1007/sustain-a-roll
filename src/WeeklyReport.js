@@ -2,11 +2,11 @@ import 'react-circular-progressbar/dist/styles.css';
 import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
 import './App.css';
 
-export default function ProgressBar(props) {
+export default function WeeklyReport(props) {
     return (
-        <CircularProgressbar className = "progressBar"
-            value={props.title}
-            text={props.title + "/100"}
+        <CircularProgressbar className = "progressBarWeekly"
+            value={88}
+            text={`${88}% \n of last week`}
             background={true}
             backgroundPadding={6}
             styles={buildStyles({
@@ -17,7 +17,7 @@ export default function ProgressBar(props) {
             strokeLinecap: 'round',
 
             // Text size
-            textSize: '16px',
+            textSize: '8px',
 
             // How long animation takes to go from one percentage to another, in seconds
             pathTransitionDuration: 0.75,
@@ -26,12 +26,13 @@ export default function ProgressBar(props) {
             // pathTransition: 'none',
 
             // Colors
-            pathColor: `rgba(30, 90, 150)`,
+            pathColor: `rgba(108, 187, 60)`,
             textColor: 'white',
             trailColor: 'white',
             backgroundColor: '#2B2E33',
             backgroundPadding: 1,
             })}
-        />
+        >
+        </CircularProgressbar>
     );
 }

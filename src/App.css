@@ -30,42 +30,14 @@
 .progressBar {
   display: flex;
   justify-content: center;
-  margin-top: 2rem;
   height: 20rem;
   width: 20rem;
 }
 
-.selectionMenu {
+.progressBarWeekly {
   display: flex;
-  justify-content: space-between;
-}
-
-.menuText {
-  display: flex;
-  align-items: center;
-  color: white;
-  font-size: 3rem;
-  font-weight: bolder;
-}
-
-.leftArrow {
-  height: 6rem;
-  width: 6rem;
-  border: none;
-  background: url(arrowLeft.png);
-  background-size: 4rem;
-  background-position: center;
-  background-repeat: no-repeat;
-  margin-left: 2rem;
-}
-
-.rightArrow {
-  height: 6rem;
-  width: 6rem;
-  border: none;
-  background: url(arrowRigh.png);
-  background-size: 4rem;
-  background-position: center;
-  background-repeat: no-repeat;
-  margin-right: 2rem;
+  justify-content: center;
+  height: 20rem;
+  width: 20rem;
+  margin-top: 29px;
 }

@@ -2,6 +2,13 @@ import './App.css';
 import SimpleBottomNavigation from './BottomNavigation';
 import BasicButtonGroup from './ButtonGroup';
 import ProgressBar from './ProgressBar';
+import BotNavWeekly from './BotNavWeekly';
+import BotNavSetting from './BotNavSetting';
+import WeeklyReport from './WeeklyReport';
+import AssessmentIcon from '@mui/icons-material/Assessment';
+import WeeklyInfo from './WeeklyInfo';
+import ThresholdSlider from './ThresholdSlider';
+import UsageSlider from './UsageSlider';
 import { useState } from "react";
 
 function App() {
@@ -18,7 +25,7 @@ function App() {
         </div>
       </header>
 
-      <ProgressBar title = {percentage}/>
+      <ProgressBar title = {percentage} />
 
       <BasicButtonGroup savePercentage = {savePercentage} />
 
@@ -37,7 +44,11 @@ function App() {
         </div>
       </header>
 
-      {/* <SimpleBottomNavigation saveBotNav = {saveBotNav} /> */}
+      <WeeklyReport />
+
+      <WeeklyInfo />
+
+      <BotNavWeekly saveBotNav = {saveBotNav} />
 
       </div>
     );
@@ -52,7 +63,11 @@ function App() {
         </div>
       </header>
 
-      {/* <SimpleBottomNavigation saveBotNav = {saveBotNav} /> */}
+      <ThresholdSlider />
+
+      <UsageSlider />
+
+      <BotNavSetting saveBotNav = {saveBotNav} />
 
       </div>
     );

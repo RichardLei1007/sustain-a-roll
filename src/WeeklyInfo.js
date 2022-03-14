@@ -15,9 +15,9 @@ export default function BasicList() {
         sx={{
             display: 'flex',
             flexDirection: 'column',
-            marginLeft: '60px',
-            // marginBottom: '5px',
-            maxWidth: 380, 
+            marginLeft: 'auto',
+            marginRight: 'auto',
+            minWidth: 350, 
             bgcolor: '#232526',
             borderRadius: 5 }}
     >

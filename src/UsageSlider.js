@@ -36,10 +36,12 @@ export default function ThresholdSlider(props) {
       bgcolor: '#232526',
       padding: '20px',
       borderRadius: 10,
-      width: 350, 
+      width: 300, 
       display: 'flex',
       flexDirection: 'column',
-      marginLeft: '55px' }}
+      marginLeft: 'auto',
+      marginRight: 'auto', 
+      }}
     >
       <Typography style={{color: "white", fontWeight: 'bold', fontSize: '20px'}} id="input-slider" gutterBottom>
         Usage Limit

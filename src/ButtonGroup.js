@@ -75,7 +75,7 @@ export default function BasicButtonGroup(props) {
             onClick={handleClick2}
             variant={flag2 ? "outlined" : "contained"}
             color={flag2 ? "secondary" : "primary"}>
-            Threshold
+            Limit
         </Button>
         <Button
             onClick={handleClick3}

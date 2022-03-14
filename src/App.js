@@ -48,7 +48,7 @@ function App() {
 
       <WeeklyReport />
 
-      <WeeklyInfo />
+      <WeeklyInfo className = "weeklyInfo" />
 
       <BotNavWeekly saveBotNav = {saveBotNav} />
 

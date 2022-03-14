@@ -9,7 +9,7 @@ export default function ProgressBar(props) {
             <CircularProgressbar className = "progressBar"
                 maxValue={100}
                 value={props.percent}
-                text={props.percent + "/100"}
+                text={props.percent + "/100 loaded"}
                 background={true}
                 backgroundPadding={6}
                 styles={buildStyles({
@@ -20,7 +20,7 @@ export default function ProgressBar(props) {
                 strokeLinecap: 'round',
     
                 // Text size
-                textSize: '16px',
+                textSize: '10px',
     
                 // How long animation takes to go from one percentage to another, in seconds
                 pathTransitionDuration: 0.75,
@@ -42,7 +42,7 @@ export default function ProgressBar(props) {
             <CircularProgressbar className = "progressBar"
                 maxValue={props.threshold}
                 value={props.percent}
-                text={props.percent + "/" + props.threshold}
+                text={props.percent + "/" + props.threshold + " Used"}
                 background={true}
                 backgroundPadding={6}
                 styles={buildStyles({
@@ -53,7 +53,7 @@ export default function ProgressBar(props) {
                 strokeLinecap: 'round',
     
                 // Text size
-                textSize: '16px',
+                textSize: '10px',
     
                 // How long animation takes to go from one percentage to another, in seconds
                 pathTransitionDuration: 0.75,
@@ -75,7 +75,7 @@ export default function ProgressBar(props) {
             <CircularProgressbar className = "progressBar"
                 maxValue={props.usage}
                 value={props.percent}
-                text={props.percent + "/" + props.usage}
+                text={"Using " + props.percent + "/" + props.usage}
                 background={true}
                 backgroundPadding={6}
                 styles={buildStyles({
@@ -86,7 +86,7 @@ export default function ProgressBar(props) {
                 strokeLinecap: 'round',
     
                 // Text size
-                textSize: '16px',
+                textSize: '10px',
     
                 // How long animation takes to go from one percentage to another, in seconds
                 pathTransitionDuration: 0.75,

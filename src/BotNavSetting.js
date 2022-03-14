@@ -12,7 +12,7 @@ export default function SimpleBottomNavigation(props) {
   props.saveBotNav(value);
   
   return (
-    <Box sx={{ width: 500 }}>
+    <Box sx={{ width: '100%' }}>
       <BottomNavigation
         sx={{
           bgcolor: '#232526',

@@ -1,70 +1,13 @@
-# Getting Started with Create React App
+This is the final project built for HCDE 438, Web Technologies. The project builds upon the UN sustainability goal of Life on Land, emphasizing sustainable practices to protect valuable resources such as trees and water. This project is heavily influenced by the idea of helping users limit their paper towel usage and is a continuation of a smart paper towel holder prototype made for another class.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+As the companion app to said paper towel holder, this app tracks and alerts users of their usage patterns and can be customized to limit one’s weekly usage to reduce paper towel waste.
 
-## Available Scripts
+On the main screen, users will be able to view the status of their paper towel holder and see how many sheets is currently loaded.
 
-In the project directory, you can run:
+From limit, users can see their weekly threshold for the quantity of paper towels they have used.
 
-### `npm start`
+And from usage, users can also monitor how many sheets of paper towel they can use at once when tearing them off from the paper towel holder.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+From the bottom navigation bar, users can also customize their personal goals in settings through changing threshold limits from the two sliders. Changes made will be reflected on the main screen for weekly limit and usage.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Finally, users can also navigate to the weekly information menu where they will be given statistics on their weekly usage compared to prior weeks as well as short and fun overviews that highlight the specifics such as the number of trees saved.

@@ -45,7 +45,7 @@ export default function ThresholdSlider(props) {
         }}
     >
       <Typography style={{color: "white", fontWeight: 'bold', fontSize: '20px'}} id="input-slider" gutterBottom>
-        Threshold
+        Weekly Limit
       </Typography>
       <Grid container spacing={2} alignItems="center">
         <Grid item xs>
